@@ -1,0 +1,271 @@
+body {
+	
+	background-image: url("paper.jpg");
+	background-color:white;
+}
+
+/*hamburgarmenyn*/
+
+/* MENU STYLES */
+.menu-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+  }
+  
+  .menu-wrap .toggler {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+	padding: 1rem;
+	background: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  /* Hamburger Line*/
+  .menu-wrap .hamburger > div {
+	position: relative;
+	flex: none;
+	width: 100%;
+	height: 2px;
+	background: black; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+  }
+  
+  /* Hamburger Lines Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	width: 100%;
+	height: 2px;
+	background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+	top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+	transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+	top: 0;
+	transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+	transform: rotate(225deg);
+  }
+  
+  /* Show Menu */
+  .menu-wrap .toggler:checked ~ .menu {
+	visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div {
+	transform: scale(1);
+	transition-duration: var(--menu-speed);
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+	opacity: 1;
+	transition:  opacity 0.4s ease 0.4s;
+  }
+  
+  .menu-wrap .menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .menu-wrap .menu > div {
+	background:white;
+	border-radius: 50%;
+	width: 200vw;
+	height: 200vw;
+	display: flex;
+	flex: none;
+	align-items: center;
+	justify-content: center;
+	transform: scale(0);
+	transition: all 0.2s ease;
+  }
+  
+  .menu-wrap .menu > div > div {
+	text-align: center;
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li {
+	list-style: none;
+	color: black;
+	font-size: 1.5rem;
+	padding: 1rem;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li > a {
+	color: black;
+	text-decoration: none;
+	transition: color 0.4s ease;
+  }
+
+/*här börjar själva hemsidan med det jag gjort*/
+
+menu {
+    font-weight: lighter;
+	text-align: center;
+	line-height: 14px;
+}
+
+.ellen {
+	text-decoration: none;
+}
+
+/*typsnitt-ish*/
+h1 {
+	color: black;
+	font-size: 80px;
+}
+
+h2 {
+	color: black;
+	font-size: 60px;
+}
+
+h3 {
+	color: black;
+	size: 40px;
+	text-align: center;
+	line-height: 50px;
+}
+
+h4 {
+	font-size: 15px;
+	color: black;
+	line-height:1px;
+}
+
+h5 {
+	font-size: 15px;
+	text-align: left;
+	color:black;
+	line-height:8px;
+}
+
+/*text på startsidan*/
+.mitten {
+	color: black;
+	size: 20px;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.under {
+    text-align:center;
+    padding: 50px 355px;
+}
+
+.p {
+	font-weight: lighter;
+	size: 12px;
+}
+
+/*pilen nedåt*/
+.pil:hover {
+    font-weight: lighter;
+    text-align:center;
+    animation-name: pilen;
+	animation-duration: 2s;
+}
+
+@keyframes pilen {
+	20% {transform: translateY(-8px);}
+	40% {transform:translateY(12px);}
+	60% {transform:translateY(-4px);}
+	80% {transform: translateY(12px);}
+	100% {transform:translateY(0px);}
+}
+
+.pil {
+text-align: center;
+padding: 100px 0px 0px 0px;
+}
+
+/*här börjar grid*/
+section {
+	padding: 100px 0px 0px 0px;
+	display: grid;
+	grid-gap: 10px;
+	margin: 0px 300px;
+	grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid div {
+	height: 240px;
+	grid-column: span 2;
+	margin-bottom: 50px;
+  }
+
+  .text1 {
+	  padding: 25px 25px 0px 0px;
+	  text-align: right;
+  }
+
+  .text2 {
+	padding: 15px 0px 0px 25px;
+	text-align: left;
+}
+
+  .bild1 {
+	text-align: left;
+  }
+
+  .bild2 {
+	text-align: right;
+  }
+
+  .huvud-bild, .tomat-bild, .sticka-bild, .bok-bild, .kod-bild {
+	height:250px;
+	width:250px;
+	border-radius:50%;
+	position:50% 50%;
+  }
