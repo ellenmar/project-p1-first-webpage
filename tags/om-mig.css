@@ -186,6 +186,16 @@ img {
 	width:200px;
 }
 
+.bildfrank img:hover {
+	text-align: justify;
+	width:200px;
+	transform: scale(2.5,2.5);
+}
+
+.frank img:hover {
+		transform: scale(1.5,1.5);
+}
+
 .två {
 	margin: 120px 200px 0px 200px;
 }

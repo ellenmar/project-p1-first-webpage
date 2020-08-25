@@ -1,13 +1,16 @@
 body {
-	
-	background-image: url("paper.jpg");
 	background-color:white;
 }
 
 @viewport {
-	width: device-width ;
-	zoom: 1.0 ;
-  }
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
+@-ms-viewport {
+	width: extend-to-zoom;
+	zoom:1.0;
+}
 
 /*hamburgarmenyn*/
 
@@ -240,14 +243,14 @@ section {
 	padding: 100px 0px 0px 0px;
 	display: grid;
 	grid-gap: 10px;
-	margin: 0px 300px;
+	margin: 0px 25%;
 	grid-template-columns: repeat(4, 1fr);
   }
 
   .grid div {
 	height: 240px;
 	grid-column: span 2;
-	margin-bottom: 50px;
+	margin-bottom: 10%;
   }
 
   .text1 {
@@ -256,7 +259,7 @@ section {
   }
 
   .text2 {
-	padding: 15px 0px 0px 25px;
+	padding: 5px 0px 0px 25px;
 	text-align: left;
 }
 
