@@ -33,7 +33,7 @@
 	justify-content: center;
   }
   
-  /* Hamburger Line*/
+  /* Hamburger Line Middle*/
   .menu-wrap .hamburger > div {
 	position: relative;
 	flex: none;
@@ -109,7 +109,7 @@
   }
   
   .menu-wrap .menu > div {
-	background:white;
+	background: white;
 	border-radius: 50%;
 	width: 200vw;
 	height: 200vw;
@@ -142,13 +142,13 @@
 	transition: color 0.4s ease;
   }
 
-  /*HÄR BÖRJAR SJÄLVA HEMSIDAN*/
+/*HÄR BÖRJAR SJÄLVA HEMSIDAN*/
 
-  menu {
+menu {
     font-weight: lighter;
 	text-align: center;
 	line-height: 14px;
-	padding-bottom:50px;
+	padding-bottom:100px;
 }
 
 .ellen {
@@ -162,52 +162,84 @@
 
 .ellen h2 {
     color: lightgrey;
-    size: 20px;
+	size: 20px;
 }
 
-section {
-	display: grid;
-	grid-gap: 5px;
-	grid-template-columns: repeat(4,1fr);
-	margin: 0px 200px 0px 200px;
+:root{
+	--main-radius:2px;
+	--main-padding:2px;
+  }
+	
+.container {
+	display:grid;
+	height:100vh;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	  "pil1 bild1 content1"
+      "pil2 bild2 content2";
+	grid-gap:0.5rem;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+	text-align:left;
+	margin:0% 20% 0% 20%;
   }
 
-section div {
-	height: 140px;
-	grid-column: span 1; 
-}
+.container img{
+	width:150px;
+  }
+  
+  #content1 {
+	grid-area:content1;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #content2 {
+	grid-area:content2;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
 
-img {
-	place-content: left;
-}
+  #bild1 {
+	grid-area:bild1;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #bild2 {
+	grid-area:bild2;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
 
-.bild {
-	text-align: justify;
-	width:200px;
-}
+  #bild2:hover {
+    transform: scale(1.5,1.5);
+  }
+  
+  @media only screen and (max-width:550px) {
+	.container {
+        text-align: center;
+	  grid-template-columns:1fr;
+	  grid-template-rows:1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "bild1"
+        "content1"
+        "bild2"
+		"content2";
+	}
+	#pil1 {
+		visibility: hidden;
+    }
+    #pil2 {
+        visibility: hidden;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color:black;
+  }
 
-.bildfrank img:hover {
-	text-align: justify;
-	width:200px;
-	transform: scale(2.5,2.5);
-}
-
-.frank img:hover {
-		transform: scale(1.5,1.5);
-}
-
-.två {
-	margin: 120px 200px 0px 200px;
-}
-
-h3 {
-	color: back;
-	font-size: 20px;
-	font-weight: normal;
-}
-
-h4 {
-	color:black;
-	font-size: 12px;
-	font-weight: normal;
-}
+  h3 {
+      font-size: 17px;
+      font-weight: normal;
+  }

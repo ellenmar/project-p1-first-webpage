@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startsida</title>
 <title>Startsida</title>
 </head>
 
-<link rel="stylesheet" type="text/css" href="startsida.css"/>
+<link rel="stylesheet" type="text/css" href="flex-startsida.css"/>
 <link rel='icon' href='favicon.ico' type='image/x-icon'/>
 <body>
 
-<!--hamburgarmenyn försök-->
+<!--hamburgarmenyn-->
 <div class="menu-wrap">
     <input type="checkbox" class="toggler">
     <div class="hamburger"><div></div></div>
@@ -29,85 +28,72 @@
   </div>
 
 <!--Här börjar själva hemsidan-->
+
 <menu>
     <a class="ellen" href="index.html">
-      <h1> ELLEN </h1>
-      <h2> MARKLUND </h2>
+    <h1> ELLEN </h1>
+    <h2> MARKLUND </h2>
     </a>
 </menu>
-    
-    <div class="mitten">
-        <p> 
-        <h3> En varslad copywriters sökande efter en hobby (och ett jobb) </h3>
-        </p>
-    </div>
-    
-    <div class="under">
-        <p> Rastlösheten kliar i fingrar och tår. Växtvärk? Här kan du läsa om mina tappra men misslyckade försök att underhålla mig själv de senaste månaderna. Som ett barn, fast med mindre tålamod.</p>
-    </div>
 
-    <div class="pil">
-        <a style="text-decoration: none; color:black;" href="#hobbys">&darr;</a>
-   </div>
-    
-<!--Här börjar sektionen med "hobbys"-->
-    
-<a id="hobbys">
-<section class="grid"> 
 
-	    <div class="text1">
-            <h4>Lite lagom lugn</h4>
-            <p>Efter att ha gjort yoga varje dag tills jag tröttnade på att göra yoga varje dag försökte jag börja meditera, men det hade jag för mycket tid för. Dagarna behövde inte kännas längre än de redan gjorde. Så jag försökte lära mig stå på huvudet istället. Gav mig blåslagna ben och ont i nacken. Fick börja om på ruta ett och googla "yoga for neck pain".</p>
-        </div>
-        
-        <div class="bild1">
-            <img class="huvud-bild" src="Bilder/yoga.JPG" alt="blåmärken">
-        </div>
-    
-        <div class="bild2">
-            <img class="tomat-bild" src="Bilder/tomater.png" alt="tomater">
-        </div>
-    
-        <div class="text2">
-            <h4>Fingrar gröna av avund</h4>
-            <p>Bakade bananbröd så in i. Åt och åt och bjöd och bjöd och åt igen. Sen såg jag på Instagram att bananbröd var ute och att frodiga balkonger var inne. Folk verkade må så jäkla bra bland tomatplantor och <em>tokiga flamingos</em> de fått i inflyttningspresent. Tänkte att det inte skulle skada att ha plantor att prata med om dagarna, så jag hällde ner två påsar tomatfrön i jorden i ren desperation. Åttio liter jord och noll tomater senare kan man väl säga att jag kommer återgå till att baka bananbröd. </p>
-        </div> 
+<div class="container1"> 
+    <div id="content1"><h3> En varslad copywriters sökande efter en hobby (och ett jobb) </h3></div>
+    <div id="content2"><p>Rastlösheten kliar i fingrar och tår. Växtvärk? Här kan du läsa om mina tappra men misslyckade försök att underhålla mig själv de senaste månaderna. Som ett barn, fast med mindre tålamod.</p></div>
+    <div id="content3" class="pil">  <a style="text-decoration: none; color:black;" href="#hobbys">&darr;</a> </div>
+</div>
 
-		<div class="text1">
-            <h4>Två unika ärmar</h4>
-            <p>Hittade en väldigt fin och väldigt dyr tröja. Tänkte ah, stickning! och började sticka en likadan. Spoiler alert! Den blev inte likadan. Men lärde mig sticka och förstod att jag har väldigt långa armar. Alltid något?</p>
-        </div>
+<a id="hobbys"> 
+<div class="container2">
 
-        <div class="bild1">
-            <img class="sticka-bild" src="./Bilder/sticka.png" alt="stickning">
-        </div>
-        
-        <div class="bild2">
-            <img class="bok-bild" src="Bilder/bok.png" alt="Gösta">
-        </div>
-        
-        <div class="text2">
-            <h4>Gösta Berling är en drama queen</h4>
-            <p>Efter att ha pluggat utvecklingspsykologi och läst om anknytningsteorier och kolik under våren så kände jag för lite sommarläsning. Anmälde mig till Litteraturhistoriens Klassiker och läste mycket bra och mycket mindre bra. Till dig som vill slippa läsa Gösta Berlings saga kommer här en sammanfattning: målande språk och gullig hembygdsromantik räddar tyvärr inte upp själva historien, i vilken Gösta springer runt och raggar och surar satan om han inte får som han vill. En stark tvåa.</p>
-        </div>
+        <div id="tom1"></div>
 
-        <div class="text1">
-            <h4>Kreativitet är inte en rak väg, sa någon</h4>
-            <p>Tänkte att det kanske vore härligt att "jobba med händerna". Stimulera den kreativa delen av hjärnan. Skapa i harmoni med drejplattans trygga surrande. Gjorde moodboards och klev in genom dörren med höga ambitioner. Läraren sa att geggan som slungades ut över golvet "inte gick att rädda". Fick sitta vid ett bord och kavla istället. Skapade en korvig, brun vas. Skrämde min kille genom att lägga den i soffan. Sen slängde vi skiten.</p>
-        </div>
+            <div id="hobby1">
+                <h4>Lite lagom lugn</h4>
+                <p>Efter att ha gjort yoga varje dag tills jag tröttnade på att göra yoga varje dag försökte jag börja meditera, men det hade jag för mycket tid för. Dagarna behövde inte kännas längre än de redan gjorde. Så jag försökte lära mig stå på huvudet istället. Gav mig blåslagna ben och ont i nacken. Fick börja om på ruta ett och googla "yoga for neck pain".</p>
+            </div>
+            <div id="hobbybild1"><img class="yogabild" src="Bilder/yoga.JPG" alt="carpediem"></div>
+        <div id="tom2"></div>
 
-        <div class="bild1">
-            <img class="kod-bild" src="Bilder/dreja.png" alt="dreja">
-        </div>
+        <div id="tom3"></div>
+            <div id="hobby2">
+                <h4>Fingrar gröna av avund</h4>
+                <p>Bakade bananbröd så in i. Åt och åt och bjöd och bjöd och åt igen. Sen såg jag på Instagram att bananbröd var ute och att frodiga balkonger var inne. Folk verkade må så jäkla bra bland tomatplantor och <em>tokiga flamingos</em> de fått i inflyttningspresent. Tänkte att det inte skulle skada att ha plantor att prata med om dagarna, så jag hällde ner två påsar tomatfrön i jorden i ren desperation. Åttio liter jord och noll tomater senare kan man väl säga att jag kommer återgå till att baka bananbröd. </p>
+            </div>
+            <div id="hobbybild2"><img class="tomat-bild" src="Bilder/tomater.png" alt="tomater"></div>
+        <div id="tom4"></div>
 
-        <div class="bild2">
-            <img class="kod-bild" src="./Bilder/kod2.png" alt="kodning">
-        </div>
-    
-        <div class="text2">
-            <h4>Konsten att koda</h4>
-            <p>Här någonstans fick jag för mig att kodning kanske var min grej. Det kan vi nog komma överens om att det inte är. Äh! Jag har gjort en hemsida i alla fall, och det är faktiskt inte fy skam. Eller? </p>
-        </div>
-         
-    </section>
+        <div id="tom5"></div>
+            <div id="hobby3">
+                <h4>Två unika ärmar</h4>
+                <p>Hittade en väldigt fin och väldigt dyr tröja. Tänkte ah, stickning! och började sticka en likadan. Spoiler alert! Den blev inte likadan. Men lärde mig sticka och förstod att jag har väldigt långa armar. Alltid något?</p>
+            </div>
+            <div id="hobbybild3"><img class="sticka-bild" src="./Bilder/sticka.png" alt="stickning"></div>
+        <div id="tom6"></div>
+
+        <div id="tom7"></div>
+            <div id="hobby4">
+                <h4>Gösta Berling är en drama queen</h4>
+                <p>Efter att ha pluggat utvecklingspsykologi och läst om anknytningsteorier och kolik under våren så kände jag för lite sommarläsning. Anmälde mig till Litteraturhistoriens Klassiker och läste mycket bra och mycket mindre bra. Till dig som vill slippa läsa Gösta Berlings saga kommer här en sammanfattning: målande språk och gullig hembygdsromantik räddar tyvärr inte upp själva historien, i vilken Gösta springer runt och raggar och surar satan om han inte får som han vill. En stark tvåa.</p>
+            </div>
+
+            <div id="hobbybild4"><img class="bok-bild" src="Bilder/bok.png" alt="Gösta"></div>
+        <div id="tom8"></div>
+
+        <div id="tom9"></div>
+            <div id="hobby5">
+                <h4>Skapandets alla former</h4>
+                <p>Tänkte att det kanske vore härligt att "jobba med händerna". Stimulera den kreativa delen av hjärnan. Skapa i harmoni med drejplattans trygga surrande. Gjorde moodboards och klev in genom dörren med höga ambitioner. Läraren sa att geggan som slungades ut över golvet "inte gick att rädda". Fick sitta vid ett bord och kavla istället. Skapade en korvig, brun vas. Skrämde min kille genom att lägga den i soffan. Sen slängde vi skiten.</p>
+            </div>
+            <div id="hobbybild5"><img class="kod-bild" src="Bilder/dreja.png" alt="dreja"></div>
+        <div id="tom10"></div>
+
+        <div id="tom11"></div>
+            <div id="hobby6">
+                <h4>Konsten att koda</h4>
+                <p>Här någonstans fick jag för mig att kodning kanske var min grej. Det kan vi nog komma överens om att det inte är. Äh! Jag har gjort en hemsida i alla fall, och det är faktiskt inte fy skam. Eller? </p>
+            </div>
+            <div id="hobbybild6"><img class="kod-bild" src="./Bilder/kod2.png" alt="kodning"></div>
+        <div id="tom12"></div>
+</div>
 </a>

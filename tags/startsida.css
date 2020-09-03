@@ -1,17 +1,3 @@
-body {
-	background-color:white;
-}
-
-@viewport {
-	zoom: 1.0;
-	width: extend-to-zoom;
-}
-
-@-ms-viewport {
-	width: extend-to-zoom;
-	zoom:1.0;
-}
-
 /*hamburgarmenyn*/
 
 /* MENU STYLES */
@@ -157,7 +143,6 @@ body {
   }
 
 /*här börjar själva hemsidan med det jag gjort*/
-
 menu {
     font-weight: lighter;
 	text-align: center;
@@ -166,8 +151,245 @@ menu {
 
 .ellen {
 	text-decoration: none;
+	width:100%;
+	display: block;
+	margin: 0 auto;
+	text-align:center;
+	padding-bottom:30px;
+}
+/*flex-test*/
+:root{
+	--main-radius:5px;
+	--main-padding:5px;
+	--main-margin:0% 20% 0% 20%;
+  }
+  
+.container1 {
+	display:grid;
+	height:65vh;
+	grid-template-columns:1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+	  "content1"
+	  "content2"
+	  "content3";
+	grid-gap:0.2rem;
+	border-radius:var(--main-radius);
+	padding:var(--main-padding);
+	margin:var(--main-margin);
+	text-align:center;
+  }
+  
+.container2 {
+	display:grid;
+	height:100vh;
+	grid-template-columns:0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-areas:
+    "tom1 hobby1 hobbybild1 tom2"
+    "tom3 hobbybild2 hobby2 tom4"
+    "tom5 hobby3 hobbybild3 tom6"
+    "tom7 hobbybild4 hobby4 tom8"
+    "tom9 hobby5 hobbybild5 tom10"
+    "tom11 hobbybild6 hobby6 tom12";
+  grid-gap:1rem;
+  border-radius:var(--main-radius);
+  padding-top:var(--main-padding);
+  margin:var(--main-margin);
+  text-align: left;
+  }
+  
+.container2 img {
+	height:250px;
+	width:250px;
+	border-radius:50%;
 }
 
+#tom1 {
+	grid-area:tom1;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom2 {
+	grid-area:tom2;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom3 {
+	grid-area:tom3;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom4 {
+	grid-area:tom4;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom5 {
+	grid-area:tom5;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom6 {
+	grid-area:tom6;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom7 {
+	grid-area:tom7;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom8 {
+	grid-area:tom8;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom9 {
+	grid-area:tom9;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom10 {
+	grid-area:tom10;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom11 {
+	grid-area:tom11;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+#tom12 {
+	grid-area:tom12;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+}
+
+
+  #content1 {
+	grid-area:content1;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #content2 {
+	grid-area:content2;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #content3 {
+	grid-area:content3;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #hobby1 {
+	grid-area:hobby1;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #hobby2 {
+	grid-area:hobby2;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #hobby3 {
+	grid-area:hobby3;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #hobby4 {
+	grid-area:hobby4;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #hobby5 {
+	grid-area:hobby5;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  
+  #hobby6 {
+	grid-area:hobby6;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+
+  #hobbybild1 {
+	grid-area:hobbybild1;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  #hobbybild2 {
+	grid-area:hobbybild2;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+
+  #hobbybild3 {
+	grid-area:hobbybild3;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+
+  #hobbybild4 {
+	grid-area:hobbybild4;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+
+  #hobbybild5 {
+	grid-area:hobbybild5;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+
+  #hobbybild6 {
+	grid-area:hobbybild6;
+	border-radius:var(--main-radius);
+	padding-top:var(--main-padding);
+  }
+  
+  @media only screen and (max-width:550px) {
+	.container1 {
+	  grid-template-columns:1fr;
+	  grid-template-rows:0.4fr 0.4fr 0.4fr;
+	  grid-template-areas:
+		"content1"
+		"content2"
+		"content3"
+	} 
+
+	.container2 {
+		text-align: center;
+		width: 80%;
+	  grid-template-columns:1fr;
+	  grid-template-rows:repeat(12,1fr);
+	  grid-template-areas:
+		"hobbybild1"
+		"hobby1"
+		"hobbybild2"
+		"hobby2"
+		"hobbybild3"
+		"hobby3"
+		"hobbybild4"
+		"hobby4"
+		"hobbybild5"
+		"hobby5"
+		"hobbybild6"
+		"hobby6";
+  }
+
+  .container2 img {
+	height:170px;
+	width:170px;
+	border-radius:50%;
+}
+
+  #tom1, #tom2, #tom3, #tom4, #tom5, #tom6,#tom7, #tom8, #tom9, #tom10, #tom11, #tom12 {
+	  visibility: hidden;
+  }
+}
+  
 /*typsnitt-ish*/
 h1 {
 	color: black;
@@ -199,19 +421,6 @@ h5 {
 	line-height:8px;
 }
 
-/*text på startsidan*/
-.mitten {
-	color: black;
-	size: 20px;
-	text-align: center;
-	padding: 20px 0px;
-}
-
-.under {
-    text-align:center;
-    padding: 50px 355px;
-}
-
 .p {
 	font-weight: lighter;
 	size: 12px;
@@ -237,43 +446,3 @@ h5 {
 text-align: center;
 padding: 100px 0px 0px 0px;
 }
-
-/*här börjar grid*/
-section {
-	padding: 100px 0px 0px 0px;
-	display: grid;
-	grid-gap: 10px;
-	margin: 0px 25%;
-	grid-template-columns: repeat(4, 1fr);
-  }
-
-  .grid div {
-	height: 240px;
-	grid-column: span 2;
-	margin-bottom: 10%;
-  }
-
-  .text1 {
-	  padding: 25px 25px 0px 0px;
-	  text-align: right;
-  }
-
-  .text2 {
-	padding: 0px 0px 25px 25px;
-	text-align: left;
-}
-
-  .bild1 {
-	text-align: left;
-  }
-
-  .bild2 {
-	text-align: right;
-  }
-
-  .huvud-bild, .tomat-bild, .sticka-bild, .bok-bild, .kod-bild {
-	height:250px;
-	width:250px;
-	border-radius:50%;
-	position:50% 50%;
-  }
