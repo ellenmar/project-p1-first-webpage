@@ -166,8 +166,8 @@ menu {
 }
 
 :root{
-	--main-radius:2px;
-	--main-padding:2px;
+	--main-radius:1px;
+	--main-padding:1px;
   }
 	
 .container {
@@ -179,7 +179,7 @@ menu {
 	  "content1 tom1 tom2 tom3"
 	  "content2 content3 content4 content5"
 	  "tom4 content6 content7 content8";
-	grid-gap:0.5rem;
+	grid-gap:0.2rem;
 	border-radius:var(--main-radius);
 	padding-top:var(--main-padding);
 	text-align:center;
@@ -259,6 +259,7 @@ menu {
   
   @media only screen and (max-width:550px) {
 	.container {
+	 margin:0% 20% 0% 30%;
 	  grid-template-columns:1fr;
 	  grid-template-rows:0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr 0.4fr;
 	  grid-template-areas:
@@ -276,13 +277,6 @@ menu {
 	}
   }
   
-
-  .gridone img, .gridtwo img, .gridthree img {
-        height:80px;
-        width:80px;
-        border-radius:50%;
-    }
-
   a {
     text-decoration: none;
     color:black;

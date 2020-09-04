@@ -150,12 +150,11 @@ menu {
 }
 
 .ellen {
+	display: block;
 	text-decoration: none;
 	width:100%;
-	display: block;
-	margin: 0 auto;
 	text-align:center;
-	padding-bottom:30px;
+	margin-bottom:100px;
 }
 /*flex-test*/
 :root{
@@ -350,7 +349,9 @@ menu {
   }
   
   @media only screen and (max-width:550px) {
+
 	.container1 {
+		margin: 0px 25px 0px 35px;
 	  grid-template-columns:1fr;
 	  grid-template-rows:0.4fr 0.4fr 0.4fr;
 	  grid-template-areas:
@@ -360,8 +361,8 @@ menu {
 	} 
 
 	.container2 {
-		text-align: center;
-		width: 80%;
+	  text-align: center;
+	  width: 80%;
 	  grid-template-columns:1fr;
 	  grid-template-rows:repeat(12,1fr);
 	  grid-template-areas:
