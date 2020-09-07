@@ -555,6 +555,131 @@ menu {
 	}
 	}
 
+	@media only screen and (max-width:480px) {
+		.container1 {
+		text-align:center;
+		height: 78vh;
+		margin: 0% 5% 0% 5%;
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr;
+		grid-template-areas:
+		"cotext"
+		"cobild";
+		}
+
+			#cobild img {
+				width:450px;
+			}
+
+		.container2 {
+		text-align:center;
+		height: 100vh;
+		margin: 5% 5% 0% 5%;
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"icatext"
+		"icabild"
+		"icafilm1"
+		"icafilm2";
+		}
+
+			#icafilm2, #icafilm1 {
+				width:450px;
+				height:252px;
+			}
+
+			#icabild img {
+				width:450px;
+			}
+
+		.container3 {
+		text-align:center;
+		height: 100vh;
+		margin: 100% 5% 0% 5%;
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr 1fr;
+		grid-template-areas:
+		"frooshtext"
+		"frooshbild1"
+		"frooshbild2";
+		}
+
+			#frooshbild1 img {
+				width:450px;
+			}
+			
+			#frooshbild2 img {
+				width:450px;
+			}
+					
+		.container4 {
+		text-align:center;
+		height: 100vh;
+		margin: 250% 5% 2% 5%;
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr 1fr;
+		grid-template-areas:
+		"adidastext1"
+		"adidasfilm"
+		"adidasbild"
+		}
+
+			#adidasbild img {
+				width: 450px;
+			}
+
+			#adidastext2 {
+				visibility: hidden;
+			}
+		
+		.container5 {
+		text-align:center;
+		height: 100vh;
+		margin: 40% 5% 20% 5%;
+		grid-template-columns:1fr;
+		grid-template-rows:1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"aftext"
+		"afbild1"
+		"afbild3"
+		"afbild2";
+		}
+
+		#afbild1 #afbild2 #afbild3 #afbild4 img {
+			width:450px;
+		}
+
+
+		.container6 {
+        text-align:center;
+        height: 100vh;
+        margin: 400% 5% 2% 5%;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "grammarlytext"
+		"grammarlybild1"
+		"grammarlyfilm"
+        "grammarlybild2";
+        }
+
+			#grammarlyfilm {
+				width:450px;
+			}
+
+			#grammarlybild1 img{
+				width:450px;
+			}
+
+			#grammarlybild2 img{
+				width:450px;
+			}
+ #cotext h5, #icatext h5, #frooshtext h5, #adidastext1 h5, #grammarlytext h5, #aftext h5 {
+		text-align: center;
+	}
+	}
+
   a {
     text-decoration: none;
     color:black;
