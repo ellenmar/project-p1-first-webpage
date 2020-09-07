@@ -556,6 +556,10 @@ menu {
 	}
 
 	@media only screen and (max-width:480px) {
+
+		:root{
+			width:100%;
+		  }
 		.container1 {
 		text-align:center;
 		height: 78vh;
@@ -654,7 +658,7 @@ menu {
 		.container6 {
         text-align:center;
         height: 100vh;
-        margin: 400% 5% 2% 5%;
+        margin: 300% 5% 2% 5%;
         grid-template-columns:1fr;
         grid-template-rows:1fr 1fr 1fr 1fr;
         grid-template-areas:
